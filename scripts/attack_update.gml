@@ -54,3 +54,52 @@ if (attack == AT_UTILT && window == 2 && window_timer == 2){
 if (attack == AT_FTILT && window == 1 && window_timer == 9){
 	sound_play(asset_get("sfx_swipe_weak2"), false, noone, .8, 1);
 }
+
+//mirror and dspecial code
+if(attack == AT_DSPECIAL){
+	if(window == 2 && !instance_exists(mirror) && window_timer >= 4){
+		mirror = instance_create(x - 20, y - 60, "obj_article1");
+		anglable = 1;
+	}
+	if(instance_exists(mirror) && window == 2 && !special_down){
+		window = 3;
+		window_timer = 0;
+		anglable = 0;
+		mirror.hsp = 0
+		mirror.vsp = 0
+	}
+	if(window == 2){
+	if(right_down){
+		if(anglable == 1){
+			mirror.angle = 0;
+		}else{
+			mirror.hsp = 4
+		}
+	}
+	if(up_down){
+		if(anglable == 1){
+			mirror.angle = 1;
+		}else{
+			mirror.vsp = -4
+		}
+	}
+	if(left_down){
+		if(anglable == 1){
+			mirror.angle = 2;
+		}else{
+			mirror.hsp = -4
+		}
+	}
+	if(down_down){
+		if(anglable == 1){
+			mirror.angle = 3;
+		}else{
+			mirror.vsp = 4
+		}
+	}
+	if(joy_pad_idle){
+		mirror.hsp = 0
+		mirror.vsp = 0
+	}
+	}
+}

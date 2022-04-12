@@ -44,7 +44,7 @@ sprite_change_offset("dstrong", 120, 148);
 sprite_change_offset("nspecial", 64, 94);
 sprite_change_offset("fspecial", 64, 94);
 sprite_change_offset("uspecial", 64, 94);
-sprite_change_offset("dspecial", 64, 94);
+sprite_change_offset("dspecial", 85, 88);
 sprite_change_offset("taunt", 32, 62);
 sprite_change_offset("phone_open", 32, 64);
 

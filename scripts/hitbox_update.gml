@@ -27,6 +27,10 @@ if (attack == AT_FAIR)
 	}
 }
 
+if(mirror_angle != 0){
+	spr_angle = mirror_angle;
+}
+
 timer++;
 
 

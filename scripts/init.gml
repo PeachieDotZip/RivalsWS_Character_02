@@ -120,6 +120,10 @@ blood = 5;
 cactus = 9;
 halo = 13;
 
+//dspecial variables
+mirror = noone;
+anglable = 0;
+
 has_goku_beam = true;
 doing_goku_beam = false;
 beam_newest_hbox = noone;
