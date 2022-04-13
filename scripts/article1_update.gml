@@ -1,8 +1,10 @@
 anim_timer++;
-if(hit_timer > 0){
+if(hit_timer > 0 && destroye = 0){
     sprite_index = sprite_get("mirror_spin");
-}else{
+}else if(hit_timer == 0 && destroye = 0){
     sprite_index = sprite_get("mirror_" + string(angle));
+}else{
+    sprite_index = sprite_get("mirror_break");
 }
 mask_index = sprite_get("mirror_box");
 image_index = anim_timer / 6;
@@ -16,6 +18,7 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id && (touch_box.a
     switch(angle){
         case 0:
         if(touch_box.attack == AT_FTILT){
+            ftilt_timer += 20;
             if(touch_box.hsp > 0){
                 touch_box.hsp *= 2
             }else{
@@ -23,11 +26,13 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id && (touch_box.a
             }
             touch_box.hitbox_timer = 0;
         }else if(touch_box.attack == AT_UTILT){
+            hit_timer = 60;
             touch_box.hsp = -touch_box.vsp;
             touch_box.vsp = 0;
             touch_box.hitbox_timer = 0;
             touch_box.mirror_angle = 90;
         }else if(touch_box.attack == AT_FAIR){
+            hit_timer = 60;
             if(touch_box.hsp > 0){
                 touch_box.hsp *= 2
             }else{
@@ -35,25 +40,29 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id && (touch_box.a
             }
             touch_box.hitbox_timer = 0;
         }
-        hit_timer = 60;
         break;
         case 1:
         if(touch_box.attack == AT_FTILT){
+            ftilt_timer += 20;
+            ftilt_timer += 20;
             touch_box.vsp = -1 * abs(touch_box.hsp);
             touch_box.hsp = 0;
             touch_box.hitbox_timer = 0;
         }else if(touch_box.attack == AT_UTILT){
+            hit_timer = 60;
             touch_box.hitbox_timer = 0;
         }else if(touch_box.attack == AT_FAIR){
+            hit_timer = 60;
             touch_box.mirror_angle = 90;
             touch_box.vsp = -1 * abs(touch_box.hsp);
             touch_box.hsp = 0;
             touch_box.hitbox_timer = 0;
         }
-        hit_timer = 60;
         break;
         case 2:
         if(touch_box.attack == AT_FTILT){
+            ftilt_timer += 20;
+            ftilt_timer += 20;
             if(touch_box.hsp < 0){
                 touch_box.hsp *= 2
             }else{
@@ -61,11 +70,13 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id && (touch_box.a
             }
             touch_box.hitbox_timer = 0;
         }else if(touch_box.attack == AT_UTILT){
+            hit_timer = 60;
             touch_box.hsp = touch_box.vsp;
             touch_box.vsp = 0;
             touch_box.hitbox_timer = 0;
             touch_box.mirror_angle = 90;
         }else if(touch_box.attack == AT_FAIR){
+            hit_timer = 60;
             if(touch_box.hsp < 0){
                 touch_box.hsp *= 2
             }else{
@@ -73,25 +84,35 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id && (touch_box.a
             }
             touch_box.hitbox_timer = 0;
         }
-        hit_timer = 60;
         break;
         case 3:
         if(touch_box.attack == AT_FTILT){
+            ftilt_timer += 20;
+            ftilt_timer += 20;
             touch_box.vsp = abs(touch_box.hsp);
             touch_box.hsp = 0;
             touch_box.hitbox_timer = 0;
         }else if(touch_box.attack == AT_UTILT){
+            hit_timer = 60;
             touch_box.vsp *= -1;
             touch_box.hitbox_timer = 0;
         }else if(touch_box.attack == AT_FAIR){
+            hit_timer = 60;
             touch_box.mirror_angle = 90;
             touch_box.vsp = abs(touch_box.hsp);
             touch_box.hsp = 0;
             touch_box.hitbox_timer = 0;
         }
-        hit_timer = 60;
         break;
     }
+}else if(instance_exists(touch_box) && touch_box.type = 1 && destroye = 0){
+    anim_timer = 0;
+    destroye = 1;
+}
+
+if(ftilt_timer == 60){
+    hit_timer = 60;
+    ftilt_timer = 0;
 }
 
 if(hsp != 4 && hsp != -4 && vsp != 4 && vsp != -4 && player_id.anglable = 0){
@@ -104,4 +125,8 @@ if(hsp != 4 && hsp != -4 && vsp != 4 && vsp != -4 && player_id.anglable = 0){
 
 if(hit_timer >= 1){
     hit_timer--;
+}
+
+if(destroye = 1 && anim_timer == 30){
+    instance_destroy(self);
 }
