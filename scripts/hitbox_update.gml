@@ -1,4 +1,13 @@
-
+if(mirror_angle != 0){
+	proj_angle = mirror_angle;
+	if(attack == AT_UTILT){
+		image_xscale = yscale;
+		image_yscale = xscale;
+	}else if(attack == AT_FAIR){
+		image_xscale = yscale;
+		image_yscale = xscale;
+	}
+}
 
 //Slow down Ftilt's projectiles over time and play dust effect when destroyed
 if (attack == AT_FTILT)
@@ -25,10 +34,6 @@ if (attack == AT_FAIR)
 	if (hbox_num == 1 && destroyed == true){
 		sound_play(asset_get("sfx_ori_energyhit_weak"), false, noone, .95, 1);
 	}
-}
-
-if(mirror_angle != 0){
-	proj_angle = mirror_angle;
 }
 
 timer++;

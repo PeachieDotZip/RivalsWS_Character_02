@@ -8,7 +8,9 @@ mask_index = sprite_get("mirror_box");
 image_index = anim_timer / 6;
 depth = player_id.depth - 2
 
-var touch_box = instance_place(x, y, pHitBox);
+touch_box = instance_place(x, y, pHitBox);
+
+
 
 if(instance_exists(touch_box) && touch_box.player_id = player_id && (touch_box.attack == AT_FTILT || touch_box.attack == AT_UTILT || touch_box.attack == AT_FAIR) && hit_timer == 0){
     switch(angle){
@@ -89,6 +91,14 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id && (touch_box.a
         }
         hit_timer = 60;
         break;
+    }
+}
+
+if(hsp != 4 && hsp != -4 && vsp != 4 && vsp != -4 && player_id.anglable = 0){
+    if(anim_timer % 60 < 30){
+        vsp = 0.2;
+    }else{
+        vsp = -0.2;
     }
 }
 
