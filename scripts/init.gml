@@ -19,7 +19,7 @@
 // STAT NAME		VALUE       BASECAST RANGE   NOTES
 
 // Physical size
-char_height         = 60;       //                  not zetterburn's. this is just cosmetic anyway
+char_height         = 99999;       // orig height is 60, it was set to 99999 for trailer purposes
 knockback_adj       = .93;		// 0.9  -  1.2
 
 // Ground movement
