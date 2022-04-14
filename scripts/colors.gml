@@ -2,7 +2,7 @@
 
 // BODY
 set_color_profile_slot( 0, 0, 228, 226, 215 );
-set_color_profile_slot_range( 0, 1, 1, 1 );
+set_color_profile_slot_range( 0, 52, 7, 12 );
 
 // RING
 set_color_profile_slot( 0, 1, 218, 187, 77 );
@@ -269,6 +269,6 @@ set_color_profile_slot( 23, 7, 133, 0, 44 ); //thorn 2
 
 /* This is a comment used by that one RoA colors.gml generator tool to store palette data. You can safely keep it in your colors.gml if you plan to re-use the tool later, or safely remove it if you don't.
 === BEGIN JSON PALETTE ===
-{"formatversion":1,"data":[{"name":"BODY","colors":[{"r":228,"g":226,"b":215,"main":true}]},{"name":"RING","colors":[{"r":218,"g":187,"b":77,"main":true},{"r":183,"g":133,"b":56},{"r":245,"g":255,"b":144}]},{"name":"PLANT GANG","colors":[{"r":90,"g":114,"b":68,"main":true},{"r":141,"g":160,"b":90}]},{"name":"THORN","colors":[{"r":122,"g":89,"b":63,"main":true},{"r":181,"g":142,"b":90},{"r":99,"g":54,"b":44}]},{"name":"WING/EYE (1)","colors":[{"r":159,"g":43,"b":52,"main":true},{"r":205,"g":107,"b":149}]},{"name":"WING/EYE (2)","colors":[{"r":89,"g":57,"b":114,"main":true}]},{"name":"2nd body","colors":[{"r":185,"g":150,"b":185,"main":true},{"r":137,"g":89,"b":149}]},{"name":"thorn 2","colors":[{"r":29,"g":85,"b":38,"main":true}]}]}
+{"formatversion":1,"data":[{"name":"BODY","colors":[{"r":228,"g":226,"b":215,"main":true},{"r":255,"g":255,"b":255}]},{"name":"RING","colors":[{"r":218,"g":187,"b":77,"main":true},{"r":183,"g":133,"b":56},{"r":245,"g":255,"b":144}]},{"name":"PLANT GANG","colors":[{"r":90,"g":114,"b":68,"main":true},{"r":141,"g":160,"b":90}]},{"name":"THORN","colors":[{"r":122,"g":89,"b":63,"main":true},{"r":181,"g":142,"b":90},{"r":99,"g":54,"b":44}]},{"name":"WING/EYE (1)","colors":[{"r":159,"g":43,"b":52,"main":true},{"r":205,"g":107,"b":149}]},{"name":"WING/EYE (2)","colors":[{"r":89,"g":57,"b":114,"main":true}]},{"name":"2nd body","colors":[{"r":185,"g":150,"b":185,"main":true},{"r":137,"g":89,"b":149}]},{"name":"thorn 2","colors":[{"r":29,"g":85,"b":38,"main":true}]}]}
 === END JSON PALETTE ===
 */
