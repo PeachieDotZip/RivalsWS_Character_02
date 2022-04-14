@@ -14,7 +14,8 @@ touch_box = instance_place(x, y, pHitBox);
 
 
 
-if(instance_exists(touch_box) && touch_box.player_id = player_id && (touch_box.attack == AT_FTILT || touch_box.attack == AT_UTILT || touch_box.attack == AT_FAIR) && hit_timer == 0){
+if(instance_exists(touch_box) && touch_box.player_id = player_id && (touch_box.attack == AT_FTILT || touch_box.attack == AT_UTILT || touch_box.attack == AT_FAIR) && hit_timer == 0 && touch_box.reflected = 0){
+    touch_box.reflected = 1;
     switch(angle){
         case 0:
         if(touch_box.attack == AT_FTILT){

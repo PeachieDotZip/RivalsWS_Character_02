@@ -42,8 +42,8 @@ if (attack == AT_UAIR && window == 3 && window_timer == 22){
 }
 //Apply vsp and hsp to Bair
 if (attack == AT_BAIR && window == 2 && window_timer == 3){
-	vsp += -0.5;
-	hsp += 1.5 * spr_dir;
+	vsp += -3.5;
+	hsp += 2.5 * spr_dir;
 }
 
 	//-Soft armor-
