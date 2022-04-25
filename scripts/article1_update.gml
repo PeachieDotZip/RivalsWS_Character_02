@@ -12,7 +12,28 @@ depth = player_id.depth - 2
 
 touch_box = instance_place(x, y, pHitBox);
 
+if(player_id.window == 2 && player_id.anglable = 0 && player_id.attack == AT_DSPECIAL){
+    moving = true;
+	if(player_id.joy_pad_idle){
+		hsp = 0
+		vsp = 0
+	}else{
+	    hsp = 4 * cos(degtorad(player_id.joy_dir));
+	    vsp = -4 * sin(degtorad(player_id.joy_dir));
+	}
+	image_alpha = abs(1 - ((anim_timer % 80) / 40));
+}else{
+    image_alpha = 1;
+    moving = false;
+}
 
+if(moving == false && prev_moving == true){
+    var mirror_appear = spawn_hit_fx(x - 26, y - 16, halo_creation);
+    	mirror_appear.depth = -10;
+    	mirror_appear.spr_dir = 1;
+}
+
+prev_moving = moving;
 
 if(instance_exists(touch_box) && touch_box.player_id = player_id && (touch_box.attack == AT_FTILT || touch_box.attack == AT_UTILT || touch_box.attack == AT_FAIR) && hit_timer == 0 && touch_box.reflected = 0){
     touch_box.reflected = 1;
@@ -116,12 +137,13 @@ if(ftilt_timer == 60){
     ftilt_timer = 0;
 }
 
-if(hsp != 4 && hsp != -4 && vsp != 4 && vsp != -4 && player_id.anglable = 0){
+if(hsp != 4 && hsp != -4 && vsp != 4 && vsp != -4 && player_id.anglable = 0 && moving = false){
     if(anim_timer % 60 < 30){
         vsp = 0.2;
     }else{
         vsp = -0.2;
     }
+    hsp = 0;
 }
 
 if(hit_timer >= 1){

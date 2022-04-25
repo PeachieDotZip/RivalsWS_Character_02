@@ -94,38 +94,15 @@ if(attack == AT_DSPECIAL){
 		mirror.hsp = 0
 		mirror.vsp = 0
 	}
-	if(window == 2){
+	if(window == 2 && anglable == 1){
 	if(right_down){
-		if(anglable == 1){
-			mirror.angle = 0;
-		}else{
-			mirror.hsp = 4
-		}
-	}
-	if(up_down){
-		if(anglable == 1){
-			mirror.angle = 1;
-		}else{
-			mirror.vsp = -4
-		}
-	}
-	if(left_down){
-		if(anglable == 1){
-			mirror.angle = 2;
-		}else{
-			mirror.hsp = -4
-		}
-	}
-	if(down_down){
-		if(anglable == 1){
-			mirror.angle = 3;
-		}else{
-			mirror.vsp = 4
-		}
-	}
-	if(joy_pad_idle){
-		mirror.hsp = 0
-		mirror.vsp = 0
+		mirror.angle = 0;
+	}else if(up_down){
+		mirror.angle = 1;
+	}else if(left_down){
+		mirror.angle = 2;
+	}else if(down_down){
+		mirror.angle = 3;
 	}
 	}
 }

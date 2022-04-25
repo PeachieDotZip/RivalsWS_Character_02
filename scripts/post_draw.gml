@@ -11,8 +11,6 @@ if phone_attacking && attack == AT_TAUNT_2{
 	shader_end();
 }
 
-
-
 // code for kamehameha
 
 if phone_attacking && attack == AT_NSPECIAL{
