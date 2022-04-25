@@ -127,7 +127,7 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id && (touch_box.a
         }
         break;
     }
-}else if(instance_exists(touch_box) && touch_box.type = 1 && destroye = 0){
+}else if(instance_exists(touch_box) && touch_box.type = 1 && destroye = 0) || (player_id.state == PS_RESPAWN && player_id.state_timer == 0){
     anim_timer = 0;
     destroye = 1;
 }
