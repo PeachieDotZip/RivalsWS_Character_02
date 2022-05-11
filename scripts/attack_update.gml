@@ -101,33 +101,50 @@ if (attack == AT_NAIR)
 //mirror and dspecial code (thx DarkDakurai)
 if(attack == AT_DSPECIAL){
 	can_fast_fall = false;
-	if(window == 2 && !instance_exists(mirror) && window_timer >= 7){
-		mirror = instance_create(x - 19, y - 64, "obj_article1");
-		anglable = 1;
+	if(window == 2 && !instance_exists(mirror1) && !instance_exists(mirror2) && window_timer >= 7){
+		mirror1 = instance_create(x, y - 34, "obj_article1");
 	}
-	if(window == 2 && !instance_exists(mirror) && window_timer == 3){
+	if(window == 2 && !instance_exists(mirror1) && !instance_exists(mirror2) && window_timer == 3){
 		var mirror_appear = spawn_hit_fx( x - 45 * spr_dir, y - 82, halo_creation);
     	mirror_appear.depth = -10;
 	}
-	if(instance_exists(mirror) && window == 2 && !special_down){
+	if(instance_exists(mirror1) || instance_exists(mirror2)) && window == 2 && !special_down{
 		window = 3;
 		window_timer = 0;
-		anglable = 0;
-		mirror.hsp = 0
-		mirror.vsp = 0
 	}
-	if(window == 2 && anglable == 1){
-	if(right_down){
-		mirror.angle = 0;
-	}else if(up_down){
-		mirror.angle = 1;
-	}else if(left_down){
-		mirror.angle = 2;
-	}else if(down_down){
-		mirror.angle = 3;
+	if(window == 2 && (instance_exists(mirror1) || instance_exists(mirror2)) && !(instance_exists(mirror1) && instance_exists(mirror2))){
+		if(up_pressed) && mirror_spawn == 0{
+			if(!instance_exists(mirror1)){
+				mirror1 = instance_create(x, y - 34, "obj_article1");
+				var mirror_appear = spawn_hit_fx( x - 45 * spr_dir, y - 82, halo_creation);
+				mirror_appear.depth = -10;
+			}else if(!instance_exists(mirror2)){
+				mirror2 = instance_create(x, y - 34, "obj_article1");
+				var mirror_appear = spawn_hit_fx( x - 45 * spr_dir, y - 82, halo_creation);
+				mirror_appear.depth = -10;
+			}
+			mirror_spawn = 1;
+		}
 	}
+	if(right_down && rotation_timer == 0 && window == 2){
+		if(instance_exists(mirror1)){
+			mirror1.angle--;
+		}
+		if(instance_exists(mirror2)){
+			mirror2.angle--;
+		}
+		rotation_timer = 8;
+	}else if(left_down && rotation_timer == 0 && window == 2){
+		if(instance_exists(mirror1)){
+			mirror1.angle++;
+		}
+		if(instance_exists(mirror2)){
+			mirror2.angle++;
+		}
+		rotation_timer = 8;
 	}
 }
+
 
 
 //Misc.

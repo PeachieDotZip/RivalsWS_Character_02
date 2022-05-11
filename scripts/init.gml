@@ -125,8 +125,10 @@ cactus = 9;
 halo = 12;
 
 //dspecial variables
-mirror = noone;
-anglable = 0;
+mirror1 = noone;
+mirror2 = noone;
+mirror_spawn = 0;
+rotation_timer = 0;
 dspecialfloat = 0;
 
 has_goku_beam = true;

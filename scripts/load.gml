@@ -53,4 +53,13 @@ sprite_change_offset("plat", 64, 94);
 
 sprite_change_offset("nspecial_proj", 64, 94);
 
-sprite_change_offset("mirror_break", 5, 5);
+sprite_change_offset("mirror", 32, 32);
+sprite_change_offset("mirror_mask", 32, 32);
+sprite_change_offset("0_mirror_hit", 14, 34);
+sprite_change_offset("1_mirror_hit", 22, 34);
+sprite_change_offset("2_mirror_hit", 34, 26);
+sprite_change_offset("3_mirror_hit", 34, 34);
+sprite_change_offset("4_mirror_hit", 30, 34);
+sprite_change_offset("5_mirror_hit", 34, 22);
+sprite_change_offset("6_mirror_hit", 34, 10);
+sprite_change_offset("7_mirror_hit", 22, 22);

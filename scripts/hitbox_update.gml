@@ -8,6 +8,14 @@ if(mirror_angle != 0){
 		image_yscale = xscale;
 	}
 }
+print_debug(damage)
+
+if(reflected == 1 && reflect_timer == 0){
+	reflect_timer = 20;
+}else if(reflect_timer == 1 && reflected == 1){
+	reflected = 0;
+}
+reflect_timer -= (reflect_timer > 0? 1: 0);
 
 //Slow down Ftilt's projectiles over time and play dust effect when destroyed
 if (attack == AT_FTILT)

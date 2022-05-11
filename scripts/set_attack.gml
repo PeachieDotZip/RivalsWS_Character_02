@@ -6,7 +6,9 @@ if(attack == AT_FAIR){
     set_hitbox_value(AT_UTILT, 2, HG_WIDTH, 65);
     set_hitbox_value(AT_UTILT, 2, HG_HEIGHT, 12);
 }
-
+if(attack == AT_DSPECIAL){
+    mirror_spawn = 0;
+}
 
 // MunoPhone Touch code - don't touch
 // should be at BOTTOM of file, but above any #define lines
