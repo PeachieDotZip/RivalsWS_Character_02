@@ -1,17 +1,10 @@
 if(mirror_angle != 0){
 	proj_angle = mirror_angle;
-	if(attack == AT_UTILT){
-		image_xscale = yscale;
-		image_yscale = xscale;
-	}else if(attack == AT_FAIR){
-		image_xscale = yscale;
-		image_yscale = xscale;
-	}
+	image_angle = mirror_angle;
 }
-print_debug(damage)
 
 if(reflected == 1 && reflect_timer == 0){
-	reflect_timer = 20;
+	reflect_timer = 30;
 }else if(reflect_timer == 1 && reflected == 1){
 	reflected = 0;
 }

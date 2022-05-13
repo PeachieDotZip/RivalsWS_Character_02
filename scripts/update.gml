@@ -11,3 +11,4 @@ if phone_cheats[CHEAT_FLY] && !shield_down vsp = -1;
 
 //mirror rotation thing
 rotation_timer -= (rotation_timer > 0? 1: 0);
+temp_cooldown -= (temp_cooldown > 0? 1: 0);

@@ -63,3 +63,6 @@ sprite_change_offset("4_mirror_hit", 30, 34);
 sprite_change_offset("5_mirror_hit", 34, 22);
 sprite_change_offset("6_mirror_hit", 34, 10);
 sprite_change_offset("7_mirror_hit", 22, 22);
+
+sprite_change_offset("fair_hit", 27, 17);
+sprite_change_offset("utilt_hit", 32, 6);

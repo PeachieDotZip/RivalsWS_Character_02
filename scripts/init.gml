@@ -124,11 +124,12 @@ blood = 6;
 cactus = 9;
 halo = 12;
 
-
 //dspecial variables
 mirror1 = noone;
 mirror2 = noone;
 mirror_spawn = 0;
+selected = 0;
+temp_cooldown = 0;
 rotation_timer = 0;
 dspecialfloat = 0;
 

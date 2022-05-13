@@ -108,7 +108,7 @@ if(attack == AT_DSPECIAL){
 		window_timer = 0;
 	}
 	if(window == 2 && (instance_exists(mirror1) || instance_exists(mirror2)) && !(instance_exists(mirror1) && instance_exists(mirror2))){
-		if(up_pressed) && mirror_spawn == 0{
+		if(shield_pressed) && mirror_spawn == 0{
 			if(!instance_exists(mirror1)){
 				mirror1 = instance_create(x, y - 34, "obj_article1");
 				var mirror_appear = spawn_hit_fx( x - 45 * spr_dir, y - 82, halo_creation);
@@ -119,24 +119,50 @@ if(attack == AT_DSPECIAL){
 				mirror_appear.depth = -10;
 			}
 			mirror_spawn = 1;
+			selected = 1;
 		}
+	}else if(window == 2 && instance_exists(mirror1) && instance_exists(mirror2) && temp_cooldown == 0 && shield_pressed){
+		temp_cooldown = 10;
+		selected = (selected = 1? 0: 1);
 	}
-	if(right_down && rotation_timer == 0 && window == 2){
-		if(instance_exists(mirror1)){
-			mirror1.angle--;
+	if(!joy_pad_idle){
+		if(instance_exists(mirror1) && selected == 0){
+			if(joy_dir >= -22.5 && joy_dir < 22.5){
+				mirror1.angle = 0;
+			}else if(joy_dir >= 22.5 && joy_dir < 67.5){
+				mirror1.angle = 1;
+			}else if(joy_dir >= 67.5 && joy_dir < 112.5){
+				mirror1.angle = 2;
+			}else if(joy_dir >= 112.5 && joy_dir < 157.5){
+				mirror1.angle = 3;
+			}else if(joy_dir >= 157.5 && joy_dir < 202.5){
+				mirror1.angle = 4;
+			}else if(joy_dir >= 202.5 && joy_dir < 247.5){
+				mirror1.angle = 5;
+			}else if(joy_dir >= 247.5 && joy_dir < 292.5){
+				mirror1.angle = 6;
+			}else if(joy_dir >= 292.5 && joy_dir < 337.5){
+				mirror1.angle = 7;
+			}
+		}else if(instance_exists(mirror2) && selected == 1){
+			if(joy_dir >= -22.5 && joy_dir < 22.5){
+				mirror2.angle = 0;
+			}else if(joy_dir >= 22.5 && joy_dir < 67.5){
+				mirror2.angle = 1;
+			}else if(joy_dir >= 67.5 && joy_dir < 112.5){
+				mirror2.angle = 2;
+			}else if(joy_dir >= 112.5 && joy_dir < 157.5){
+				mirror2.angle = 3;
+			}else if(joy_dir >= 157.5 && joy_dir < 202.5){
+				mirror2.angle = 4;
+			}else if(joy_dir >= 202.5 && joy_dir < 247.5){
+				mirror2.angle = 5;
+			}else if(joy_dir >= 247.5 && joy_dir < 292.5){
+				mirror2.angle = 6;
+			}else if(joy_dir >= 292.5 && joy_dir < 337.5){
+				mirror2.angle = 7;
+			}
 		}
-		if(instance_exists(mirror2)){
-			mirror2.angle--;
-		}
-		rotation_timer = 8;
-	}else if(left_down && rotation_timer == 0 && window == 2){
-		if(instance_exists(mirror1)){
-			mirror1.angle++;
-		}
-		if(instance_exists(mirror2)){
-			mirror2.angle++;
-		}
-		rotation_timer = 8;
 	}
 }
 
