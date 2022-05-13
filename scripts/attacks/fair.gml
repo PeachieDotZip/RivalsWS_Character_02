@@ -96,7 +96,7 @@ set_hitbox_value(AT_FAIR, 1, HG_DRIFT_MULTIPLIER, 1.05);
 set_hitbox_value(AT_FAIR, 1, HG_SDI_MULTIPLIER, .9);
 set_hitbox_value(AT_FAIR, 1, HG_HITSTUN_MULTIPLIER, 1.05);
 set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_SPRITE, fair_proj);
-set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_MASK, -1);
+set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_MASK, sprite_get("fair_hit"));
 set_hitbox_value(AT_FAIR, 1, HG_HIT_SFX, asset_get("sfx_ori_energyhit_medium"));
 set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_ANIM_SPEED, .44);
 set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_HSPEED, 7);

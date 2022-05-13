@@ -84,6 +84,6 @@ set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_WALL_BEHAVIOR, 1);
 set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_IS_TRANSCENDENT, true);
 set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_PLASMA_SAFE, false);
 set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_SPRITE, sprite_get("halo_projectile"));
-set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_MASK, -1);
+set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_MASK, sprite_get("utilt_hit"));
 set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_DESTROY_EFFECT, halodestroy);
 set_hitbox_value(AT_UTILT, 2, HG_HITBOX_GROUP, 2);
