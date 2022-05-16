@@ -33,15 +33,23 @@ alt_name[11] = "nightmare from the dark";
 alt_name[12] = "souless liar";
 alt_name[13] = "general dark mind";
 alt_name[14] = "souless paintress";
-alt_name[15] = "Necrodeus, god of the dead";
-alt_name[16] = "please stop the microtransactions magolor this isn't funny anymore i want to play this game";
-alt_name[17] = "blossoming beauty";
-alt_name[18] = "machine of the stars";
-alt_name[19] = "dark lord of despair";
-alt_name[20] = "a mysterious soul...";
-alt_name[21] = "the ultimate life-form";
-alt_name[22] = "species born of chaos";
-alt_name[23] = "why";
+alt_name[15] = "star of darkness";
+alt_name[16] = "Necrodeus, god of the dead";
+alt_name[17] = "please stop the microtransactions magolor this isn't funny anymore i want to play this game";
+alt_name[18] = "now im evil";
+alt_name[19] = "warrior from the past";
+alt_name[20] = "unfortunate friend";
+alt_name[21] = "blossoming beauty";
+alt_name[22] = "machine of the stars";
+alt_name[23] = "literally who";
+alt_name[24] = "officiant of doom";
+alt_name[25] = "dark lord of despair";
+alt_name[26] = "a mysterious soul...";
+alt_name[27] = "fluttering dreameater";
+alt_name[28] = "the ultimate life-form";
+alt_name[29] = "species born of chaos";
+alt_name[30] = "why";
+alt_name[31] = "VAE";
 
 draw_set_halign(fa_left);
 
@@ -68,18 +76,19 @@ if(alt_cur != prev_alt){
 prev_alt = alt_cur;
 
 //alt name
-var alt_text = [
-textDraw(temp_x + 14, temp_y + 115, "fName", c_black, 0, 100000, 1, false, alpher_alt, alt_name[alt_cur]),
-textDraw(temp_x + 14, temp_y + 113, "fName", c_black, 0, 100000, 1, false, alpher_alt, alt_name[alt_cur]),
-textDraw(temp_x + 14, temp_y + 111, "fName", c_black, 0, 100000, 1, false, alpher_alt, alt_name[alt_cur]),
-textDraw(temp_x + 10, temp_y + 115, "fName", c_black, 0, 100000, 1, false, alpher_alt, alt_name[alt_cur]),
-textDraw(temp_x + 10, temp_y + 113, "fName", c_black, 0, 100000, 1, false, alpher_alt, alt_name[alt_cur]),
-textDraw(temp_x + 10, temp_y + 111, "fName", c_black, 0, 100000, 1, false, alpher_alt, alt_name[alt_cur]),
-textDraw(temp_x + 12, temp_y + 115, "fName", c_black, 0, 100000, 1, false, alpher_alt, alt_name[alt_cur]),
-textDraw(temp_x + 12, temp_y + 111, "fName", c_black, 0, 100000, 1, false, alpher_alt, alt_name[alt_cur]),
-textDraw(temp_x + 12, temp_y + 113, "fName", make_color_rgb(get_color_profile_slot_r(alt_cur, 0), get_color_profile_slot_g(alt_cur, 0), get_color_profile_slot_b(alt_cur, 0)), 0, 100000, 1, false, alpher_alt, alt_name[alt_cur]),
-]
-alt_text.depth = -10;
+textDraw(temp_x + 14, temp_y + 115, "fName", (alt_cur = 10 || alt_cur = 15 || alt_cur = 27? c_white: c_black), 0, 100000, 1, false, alpher_alt, alt_name[alt_cur])
+textDraw(temp_x + 14, temp_y + 113, "fName", (alt_cur = 10 || alt_cur = 15 || alt_cur = 27? c_white: c_black), 0, 100000, 1, false, alpher_alt, alt_name[alt_cur])
+textDraw(temp_x + 14, temp_y + 111, "fName", (alt_cur = 10 || alt_cur = 15 || alt_cur = 27? c_white: c_black), 0, 100000, 1, false, alpher_alt, alt_name[alt_cur])
+textDraw(temp_x + 10, temp_y + 115, "fName", (alt_cur = 10 || alt_cur = 15 || alt_cur = 27? c_white: c_black), 0, 100000, 1, false, alpher_alt, alt_name[alt_cur])
+textDraw(temp_x + 10, temp_y + 113, "fName", (alt_cur = 10 || alt_cur = 15 || alt_cur = 27? c_white: c_black), 0, 100000, 1, false, alpher_alt, alt_name[alt_cur])
+textDraw(temp_x + 10, temp_y + 111, "fName", (alt_cur = 10 || alt_cur = 15 || alt_cur = 27? c_white: c_black), 0, 100000, 1, false, alpher_alt, alt_name[alt_cur])
+textDraw(temp_x + 12, temp_y + 115, "fName", (alt_cur = 10 || alt_cur = 15 || alt_cur = 27? c_white: c_black), 0, 100000, 1, false, alpher_alt, alt_name[alt_cur])
+textDraw(temp_x + 12, temp_y + 111, "fName", (alt_cur = 10 || alt_cur = 15 || alt_cur = 27? c_white: c_black), 0, 100000, 1, false, alpher_alt, alt_name[alt_cur])
+textDraw(temp_x + 12, temp_y + 113, "fName", make_color_rgb(get_color_profile_slot_r(alt_cur, 0), get_color_profile_slot_g(alt_cur, 0), get_color_profile_slot_b(alt_cur, 0)), 0, 100000, 1, false, alpher_alt, alt_name[alt_cur])
+if(alt_cur == 26){
+    init_shader();
+}
+
 
 #define textDraw(x, y, font, color, lineb, linew, scale, outline, alpha, string)
 

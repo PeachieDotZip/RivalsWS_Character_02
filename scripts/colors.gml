@@ -34,7 +34,7 @@ set_color_profile_slot_range( 7, 1, 1, 1 );
 
 
 // ALTERNATE COLORS
-set_num_palettes( 24 );
+set_num_palettes( 32 );
 
 // rotten yellow
 set_color_profile_slot( 1, 0, 217, 193, 41 ); //BODY
@@ -176,95 +176,175 @@ set_color_profile_slot( 14, 5, 107, 22, 181 ); //WING/EYE (2)
 set_color_profile_slot( 14, 6, 139, 78, 186 ); //2nd body
 set_color_profile_slot( 14, 7, 0, 127, 166 ); //thorn 2
 
-// Necrodeus, god of the dead
-set_color_profile_slot( 15, 0, 222, 219, 213 ); //BODY
-set_color_profile_slot( 15, 1, 169, 142, 191 ); //RING
-set_color_profile_slot( 15, 2, 118, 26, 163 ); //PLANT GANG
-set_color_profile_slot( 15, 3, 186, 181, 189 ); //THORN
-set_color_profile_slot( 15, 4, 160, 121, 199 ); //WING/EYE (1)
-set_color_profile_slot( 15, 5, 88, 70, 140 ); //WING/EYE (2)
-set_color_profile_slot( 15, 6, 186, 176, 158 ); //2nd body
-set_color_profile_slot( 15, 7, 36, 21, 66 ); //thorn 2
+// star of darkness
+set_color_profile_slot( 15, 0, 3, 6, 15 ); //BODY
+set_color_profile_slot( 15, 1, 87, 101, 252 ); //RING
+set_color_profile_slot( 15, 2, 33, 48, 253 ); //PLANT GANG
+set_color_profile_slot( 15, 3, 113, 125, 255 ); //THORN
+set_color_profile_slot( 15, 4, 203, 12, 254 ); //WING/EYE (1)
+set_color_profile_slot( 15, 5, 248, 69, 230 ); //WING/EYE (2)
+set_color_profile_slot( 15, 6, 3, 4, 18 ); //2nd body
+set_color_profile_slot( 15, 7, 27, 40, 254 ); //thorn 2
 
-// please stop the microtransactions magolor this isn't funny anymore i want to play this game
-set_color_profile_slot( 16, 0, 96, 185, 224 ); //BODY
-set_color_profile_slot( 16, 1, 176, 173, 148 ); //RING
-set_color_profile_slot( 16, 2, 200, 204, 118 ); //PLANT GANG
-set_color_profile_slot( 16, 3, 222, 199, 51 ); //THORN
-set_color_profile_slot( 16, 4, 122, 79, 0 ); //WING/EYE (1)
-set_color_profile_slot( 16, 5, 128, 17, 0 ); //WING/EYE (2)
-set_color_profile_slot( 16, 6, 73, 126, 199 ); //2nd body
-set_color_profile_slot( 16, 7, 133, 117, 52 ); //thorn 2
+// Necrodeus, god of the dead
+set_color_profile_slot( 16, 0, 222, 219, 213 ); //BODY
+set_color_profile_slot( 16, 1, 169, 142, 191 ); //RING
+set_color_profile_slot( 16, 2, 118, 26, 163 ); //PLANT GANG
+set_color_profile_slot( 16, 3, 186, 181, 189 ); //THORN
+set_color_profile_slot( 16, 4, 160, 121, 199 ); //WING/EYE (1)
+set_color_profile_slot( 16, 5, 88, 70, 140 ); //WING/EYE (2)
+set_color_profile_slot( 16, 6, 186, 176, 158 ); //2nd body
+set_color_profile_slot( 16, 7, 36, 21, 66 ); //thorn 2
+
+// please stop the microtransactions magolor this isn't funny anymore
+set_color_profile_slot( 17, 0, 96, 185, 224 ); //BODY
+set_color_profile_slot( 17, 1, 176, 173, 148 ); //RING
+set_color_profile_slot( 17, 2, 200, 204, 118 ); //PLANT GANG
+set_color_profile_slot( 17, 3, 222, 199, 51 ); //THORN
+set_color_profile_slot( 17, 4, 122, 79, 0 ); //WING/EYE (1)
+set_color_profile_slot( 17, 5, 128, 17, 0 ); //WING/EYE (2)
+set_color_profile_slot( 17, 6, 73, 126, 199 ); //2nd body
+set_color_profile_slot( 17, 7, 133, 117, 52 ); //thorn 2
+
+// now im evil
+set_color_profile_slot( 18, 0, 2, 90, 99 ); //BODY
+set_color_profile_slot( 18, 1, 214, 212, 171 ); //RING
+set_color_profile_slot( 18, 2, 215, 212, 174 ); //PLANT GANG
+set_color_profile_slot( 18, 3, 140, 137, 95 ); //THORN
+set_color_profile_slot( 18, 4, 210, 42, 43 ); //WING/EYE (1)
+set_color_profile_slot( 18, 5, 195, 73, 76 ); //WING/EYE (2)
+set_color_profile_slot( 18, 6, 0, 49, 52 ); //2nd body
+set_color_profile_slot( 18, 7, 227, 223, 198 ); //thorn 2
+
+// warrior from the past
+set_color_profile_slot( 19, 0, 230, 228, 242 ); //BODY
+set_color_profile_slot( 19, 1, 252, 227, 66 ); //RING
+set_color_profile_slot( 19, 2, 227, 59, 220 ); //PLANT GANG
+set_color_profile_slot( 19, 3, 230, 228, 242 ); //THORN
+set_color_profile_slot( 19, 4, 252, 2, 213 ); //WING/EYE (1)
+set_color_profile_slot( 19, 5, 191, 15, 147 ); //WING/EYE (2)
+set_color_profile_slot( 19, 6, 161, 131, 217 ); //2nd body
+set_color_profile_slot( 19, 7, 117, 10, 82 ); //thorn 2
+
+// unfortunate friend
+set_color_profile_slot( 20, 0, 147, 81, 65 ); //BODY
+set_color_profile_slot( 20, 1, 244, 169, 67 ); //RING
+set_color_profile_slot( 20, 2, 49, 72, 64 ); //PLANT GANG
+set_color_profile_slot( 20, 3, 210, 217, 233 ); //THORN
+set_color_profile_slot( 20, 4, 205, 119, 39 ); //WING/EYE (1)
+set_color_profile_slot( 20, 5, 211, 225, 227 ); //WING/EYE (2)
+set_color_profile_slot( 20, 6, 71, 39, 30 ); //2nd body
+set_color_profile_slot( 20, 7, 26, 54, 49 ); //thorn 2
 
 // blossoming beauty
-set_color_profile_slot( 17, 0, 240, 201, 46 ); //BODY
-set_color_profile_slot( 17, 1, 235, 38, 132 ); //RING
-set_color_profile_slot( 17, 2, 51, 68, 176 ); //PLANT GANG
-set_color_profile_slot( 17, 3, 235, 140, 85 ); //THORN
-set_color_profile_slot( 17, 4, 162, 219, 235 ); //WING/EYE (1)
-set_color_profile_slot( 17, 5, 64, 138, 207 ); //WING/EYE (2)
-set_color_profile_slot( 17, 6, 199, 160, 62 ); //2nd body
-set_color_profile_slot( 17, 7, 58, 21, 110 ); //thorn 2
+set_color_profile_slot( 21, 0, 240, 201, 46 ); //BODY
+set_color_profile_slot( 21, 1, 235, 38, 132 ); //RING
+set_color_profile_slot( 21, 2, 51, 68, 176 ); //PLANT GANG
+set_color_profile_slot( 21, 3, 235, 140, 85 ); //THORN
+set_color_profile_slot( 21, 4, 162, 219, 235 ); //WING/EYE (1)
+set_color_profile_slot( 21, 5, 64, 138, 207 ); //WING/EYE (2)
+set_color_profile_slot( 21, 6, 199, 160, 62 ); //2nd body
+set_color_profile_slot( 21, 7, 58, 21, 110 ); //thorn 2
 
 // machine of the stars
-set_color_profile_slot( 18, 0, 237, 234, 208 ); //BODY
-set_color_profile_slot( 18, 1, 240, 26, 101 ); //RING
-set_color_profile_slot( 18, 2, 48, 49, 61 ); //PLANT GANG
-set_color_profile_slot( 18, 3, 191, 40, 101 ); //THORN
-set_color_profile_slot( 18, 4, 48, 220, 240 ); //WING/EYE (1)
-set_color_profile_slot( 18, 5, 35, 154, 194 ); //WING/EYE (2)
-set_color_profile_slot( 18, 6, 186, 158, 153 ); //2nd body
-set_color_profile_slot( 18, 7, 0, 0, 0 ); //thorn 2
+set_color_profile_slot( 22, 0, 237, 234, 208 ); //BODY
+set_color_profile_slot( 22, 1, 240, 26, 101 ); //RING
+set_color_profile_slot( 22, 2, 48, 49, 61 ); //PLANT GANG
+set_color_profile_slot( 22, 3, 191, 40, 101 ); //THORN
+set_color_profile_slot( 22, 4, 48, 220, 240 ); //WING/EYE (1)
+set_color_profile_slot( 22, 5, 35, 154, 194 ); //WING/EYE (2)
+set_color_profile_slot( 22, 6, 186, 158, 153 ); //2nd body
+set_color_profile_slot( 22, 7, 0, 0, 0 ); //thorn 2
+
+// literally who
+set_color_profile_slot( 23, 0, 188, 33, 87 ); //BODY
+set_color_profile_slot( 23, 1, 91, 213, 79 ); //RING
+set_color_profile_slot( 23, 2, 241, 179, 26 ); //PLANT GANG
+set_color_profile_slot( 23, 3, 105, 230, 242 ); //THORN
+set_color_profile_slot( 23, 4, 211, 142, 215 ); //WING/EYE (1)
+set_color_profile_slot( 23, 5, 107, 0, 74 ); //WING/EYE (2)
+set_color_profile_slot( 23, 6, 104, 10, 40 ); //2nd body
+set_color_profile_slot( 23, 7, 248, 72, 137 ); //thorn 2
+
+// officiant of doom
+set_color_profile_slot( 24, 0, 107, 108, 198 ); //BODY
+set_color_profile_slot( 24, 1, 228, 220, 109 ); //RING
+set_color_profile_slot( 24, 2, 106, 7, 192 ); //PLANT GANG
+set_color_profile_slot( 24, 3, 254, 5, 119 ); //THORN
+set_color_profile_slot( 24, 4, 240, 196, 104 ); //WING/EYE (1)
+set_color_profile_slot( 24, 5, 140, 155, 237 ); //WING/EYE (2)
+set_color_profile_slot( 24, 6, 75, 53, 161 ); //2nd body
+set_color_profile_slot( 24, 7, 186, 7, 240 ); //thorn 2
 
 // dark lord of despair
-set_color_profile_slot( 19, 0, 147, 176, 109 ); //BODY
-set_color_profile_slot( 19, 1, 199, 197, 157 ); //RING
-set_color_profile_slot( 19, 2, 32, 105, 73 ); //PLANT GANG
-set_color_profile_slot( 19, 3, 199, 172, 54 ); //THORN
-set_color_profile_slot( 19, 4, 196, 141, 147 ); //WING/EYE (1)
-set_color_profile_slot( 19, 5, 184, 75, 91 ); //WING/EYE (2)
-set_color_profile_slot( 19, 6, 85, 112, 84 ); //2nd body
-set_color_profile_slot( 19, 7, 11, 39, 46 ); //thorn 2
+set_color_profile_slot( 25, 0, 147, 176, 109 ); //BODY
+set_color_profile_slot( 25, 1, 199, 197, 157 ); //RING
+set_color_profile_slot( 25, 2, 32, 105, 73 ); //PLANT GANG
+set_color_profile_slot( 25, 3, 199, 172, 54 ); //THORN
+set_color_profile_slot( 25, 4, 196, 141, 147 ); //WING/EYE (1)
+set_color_profile_slot( 25, 5, 184, 75, 91 ); //WING/EYE (2)
+set_color_profile_slot( 25, 6, 85, 112, 84 ); //2nd body
+set_color_profile_slot( 25, 7, 11, 39, 46 ); //thorn 2
 
 // a mysterious soul...
-set_color_profile_slot( 20, 0, 245, 247, 247 ); //BODY
-set_color_profile_slot( 20, 1, 78, 237, 215 ); //RING
-set_color_profile_slot( 20, 2, 32, 108, 179 ); //PLANT GANG
-set_color_profile_slot( 20, 3, 250, 177, 193 ); //THORN
-set_color_profile_slot( 20, 4, 240, 67, 96 ); //WING/EYE (1)
-set_color_profile_slot( 20, 5, 207, 25, 95 ); //WING/EYE (2)
-set_color_profile_slot( 20, 6, 195, 214, 224 ); //2nd body
-set_color_profile_slot( 20, 7, 0, 64, 138 ); //thorn 2
+set_color_profile_slot( 26, 0, 0, 0, 0 ); //BODY
+set_color_profile_slot( 26, 1, 0, 255, 0 ); //RING
+set_color_profile_slot( 26, 2, 0, 255, 0 ); //PLANT GANG
+set_color_profile_slot( 26, 3, 0, 0, 0 ); //THORN
+set_color_profile_slot( 26, 4, 0, 255, 0 ); //WING/EYE (1)
+set_color_profile_slot( 26, 5, 0, 255, 0 ); //WING/EYE (2)
+set_color_profile_slot( 26, 6, 0, 0, 0 ); //2nd body
+set_color_profile_slot( 26, 7, 0, 255, 0 ); //thorn 2
+
+// fluttering dreameater
+set_color_profile_slot( 27, 0, 17, 1, 0 ); //BODY
+set_color_profile_slot( 27, 1, 254, 237, 63 ); //RING
+set_color_profile_slot( 27, 2, 237, 52, 0 ); //PLANT GANG
+set_color_profile_slot( 27, 3, 255, 150, 115 ); //THORN
+set_color_profile_slot( 27, 4, 255, 1, 0 ); //WING/EYE (1)
+set_color_profile_slot( 27, 5, 184, 1, 0 ); //WING/EYE (2)
+set_color_profile_slot( 27, 6, 64, 25, 14 ); //2nd body
+set_color_profile_slot( 27, 7, 229, 71, 38 ); //thorn 2
 
 // the ultimate life-form
-set_color_profile_slot( 21, 0, 54, 235, 175 ); //BODY
-set_color_profile_slot( 21, 1, 255, 195, 77 ); //RING
-set_color_profile_slot( 21, 2, 237, 189, 100 ); //PLANT GANG
-set_color_profile_slot( 21, 3, 209, 56, 68 ); //THORN
-set_color_profile_slot( 21, 4, 242, 133, 83 ); //WING/EYE (1)
-set_color_profile_slot( 21, 5, 191, 31, 95 ); //WING/EYE (2)
-set_color_profile_slot( 21, 6, 69, 166, 191 ); //2nd body
-set_color_profile_slot( 21, 7, 235, 98, 12 ); //thorn 2
+set_color_profile_slot( 28, 0, 54, 235, 175 ); //BODY
+set_color_profile_slot( 28, 1, 255, 195, 77 ); //RING
+set_color_profile_slot( 28, 2, 237, 189, 100 ); //PLANT GANG
+set_color_profile_slot( 28, 3, 209, 56, 68 ); //THORN
+set_color_profile_slot( 28, 4, 242, 133, 83 ); //WING/EYE (1)
+set_color_profile_slot( 28, 5, 191, 31, 95 ); //WING/EYE (2)
+set_color_profile_slot( 28, 6, 69, 166, 191 ); //2nd body
+set_color_profile_slot( 28, 7, 235, 98, 12 ); //thorn 2
 
 // species born of chaos
-set_color_profile_slot( 22, 0, 230, 70, 55 ); //BODY
-set_color_profile_slot( 22, 1, 129, 230, 224 ); //RING
-set_color_profile_slot( 22, 2, 250, 210, 47 ); //PLANT GANG
-set_color_profile_slot( 22, 3, 129, 230, 224 ); //THORN
-set_color_profile_slot( 22, 4, 255, 233, 219 ); //WING/EYE (1)
-set_color_profile_slot( 22, 5, 255, 181, 197 ); //WING/EYE (2)
-set_color_profile_slot( 22, 6, 158, 0, 48 ); //2nd body
-set_color_profile_slot( 22, 7, 189, 119, 15 ); //thorn 2
+set_color_profile_slot( 29, 0, 230, 70, 55 ); //BODY
+set_color_profile_slot( 29, 1, 129, 230, 224 ); //RING
+set_color_profile_slot( 29, 2, 250, 210, 47 ); //PLANT GANG
+set_color_profile_slot( 29, 3, 129, 230, 224 ); //THORN
+set_color_profile_slot( 29, 4, 255, 233, 219 ); //WING/EYE (1)
+set_color_profile_slot( 29, 5, 255, 181, 197 ); //WING/EYE (2)
+set_color_profile_slot( 29, 6, 158, 0, 48 ); //2nd body
+set_color_profile_slot( 29, 7, 189, 119, 15 ); //thorn 2
 
 // why
-set_color_profile_slot( 23, 0, 227, 14, 14 ); //BODY
-set_color_profile_slot( 23, 1, 150, 184, 176 ); //RING
-set_color_profile_slot( 23, 2, 214, 28, 40 ); //PLANT GANG
-set_color_profile_slot( 23, 3, 150, 184, 176 ); //THORN
-set_color_profile_slot( 23, 4, 23, 224, 235 ); //WING/EYE (1)
-set_color_profile_slot( 23, 5, 64, 105, 255 ); //WING/EYE (2)
-set_color_profile_slot( 23, 6, 176, 16, 35 ); //2nd body
-set_color_profile_slot( 23, 7, 133, 0, 44 ); //thorn 2
+set_color_profile_slot( 30, 0, 227, 14, 14 ); //BODY
+set_color_profile_slot( 30, 1, 150, 184, 176 ); //RING
+set_color_profile_slot( 30, 2, 214, 28, 40 ); //PLANT GANG
+set_color_profile_slot( 30, 3, 150, 184, 176 ); //THORN
+set_color_profile_slot( 30, 4, 23, 224, 235 ); //WING/EYE (1)
+set_color_profile_slot( 30, 5, 64, 105, 255 ); //WING/EYE (2)
+set_color_profile_slot( 30, 6, 176, 16, 35 ); //2nd body
+set_color_profile_slot( 30, 7, 133, 0, 44 ); //thorn 2
+
+// VAE
+set_color_profile_slot( 31, 0, 254, 254, 254 ); //BODY
+set_color_profile_slot( 31, 1, 67, 41, 115 ); //RING
+set_color_profile_slot( 31, 2, 67, 41, 115 ); //PLANT GANG
+set_color_profile_slot( 31, 3, 200, 54, 68 ); //THORN
+set_color_profile_slot( 31, 4, 200, 54, 68 ); //WING/EYE (1)
+set_color_profile_slot( 31, 5, 67, 41, 115 ); //WING/EYE (2)
+set_color_profile_slot( 31, 6, 219, 219, 219 ); //2nd body
+set_color_profile_slot( 31, 7, 33, 14, 33 ); //thorn 2
 
 
 /* This is a comment used by that one RoA colors.gml generator tool to store palette data. You can safely keep it in your colors.gml if you plan to re-use the tool later, or safely remove it if you don't.

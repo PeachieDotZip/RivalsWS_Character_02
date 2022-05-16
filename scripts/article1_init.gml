@@ -10,3 +10,4 @@ ftilt_timer = 0;
 moving = false;
 prev_moving = moving;
 halo_creation =  hit_fx_create( sprite_get( "halo_creation" ), 10);
+uses_shader = 1;

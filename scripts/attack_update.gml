@@ -119,7 +119,7 @@ if(attack == AT_DSPECIAL){
 				mirror_appear.depth = -10;
 			}
 			mirror_spawn = 1;
-			selected = 1;
+			selected = 0;
 		}
 	}else if(window == 2 && instance_exists(mirror1) && instance_exists(mirror2) && temp_cooldown == 0 && shield_pressed){
 		temp_cooldown = 10;
