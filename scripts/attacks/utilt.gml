@@ -81,6 +81,7 @@ set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_ANIM_SPEED, .35);
 set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_VSPEED, -4);
 set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_GRAVITY, 0);
 set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_WALL_BEHAVIOR, 1);
+set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_GROUND_BEHAVIOR, 1);
 set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_IS_TRANSCENDENT, true);
 set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_PLASMA_SAFE, false);
 set_hitbox_value(AT_UTILT, 2, HG_PROJECTILE_SPRITE, sprite_get("halo_projectile"));

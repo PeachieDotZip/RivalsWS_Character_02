@@ -32,6 +32,9 @@ if (attack == AT_FAIR)
 		fair_proj_disappear.depth = -10;
 		sound_play(asset_get("sfx_abyss_despawn"), false, noone, .9, 1);
 	}
+	if (hbox_num == 1 && !free){
+		destroyed = true;
+	}
 	if (hbox_num == 1 && destroyed == true){
 		sound_play(asset_get("sfx_ori_energyhit_weak"), false, noone, .95, 1);
 	}

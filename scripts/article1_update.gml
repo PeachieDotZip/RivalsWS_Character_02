@@ -28,7 +28,7 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
         case 0:
         hit_timer = 18;
 		touch_box.hitbox_timer = 0;
-		touch_box.damage *= 1.05;
+		touch_box.damage *= 1.10;
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
@@ -53,14 +53,14 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
         	touch_box.hsp *= -1
         	touch_box.hitbox_timer = 0;
         	touch_box.image_index = 0;
-        	touch_box.damage *= 1.05
+        	touch_box.damage *= 1.10
         }
         */
         break;
         case 1:
         hit_timer = 18;
 		touch_box.hitbox_timer = 0;
-		touch_box.damage *= 1.05;
+		touch_box.damage *= 1.10;
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
@@ -92,13 +92,13 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
         touch_box.mirror_angle = 90;
         touch_box.image_yscale = touch_box.xscale;
         touch_box.image_xscale = touch_box.yscale;
-        touch_box.damage *= 1.05
+        touch_box.damage *= 1.10
         */
         break;
         case 2:
         hit_timer = 18;
 		touch_box.hitbox_timer = 0;
-		touch_box.damage *= 1.05;
+		touch_box.damage *= 1.10;
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
@@ -127,14 +127,14 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
         	touch_box.vsp *= -1
         	touch_box.hitbox_timer = 0;
         	touch_box.image_index = 0;
-        	touch_box.damage *= 1.05
+        	touch_box.damage *= 1.10
         }
         */
         break;
         case 3:
         hit_timer = 18;
 		touch_box.hitbox_timer = 0;
-		touch_box.damage *= 1.05;
+		touch_box.damage *= 1.10;
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
@@ -167,13 +167,13 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
         touch_box.mirror_angle = 90;
         touch_box.image_yscale = touch_box.xscale;
         touch_box.image_xscale = touch_box.yscale;
-        touch_box.damage *= 1.05
+        touch_box.damage *= 1.10
         */
         break;
         case 4:
         hit_timer = 18;
 		touch_box.hitbox_timer = 0;
-		touch_box.damage *= 1.05;
+		touch_box.damage *= 1.10;
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
@@ -201,14 +201,14 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
         	touch_box.hsp *= -1
         	touch_box.hitbox_timer = 0;
         	touch_box.image_index = 0;
-        	touch_box.damage *= 1.05
+        	touch_box.damage *= 1.10
         }
         */
         break;
         case 5:
         hit_timer = 18;
 		touch_box.hitbox_timer = 0;
-		touch_box.damage *= 1.05;
+		touch_box.damage *= 1.10;
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
@@ -240,13 +240,13 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
         touch_box.mirror_angle = 90;
         touch_box.image_yscale = touch_box.xscale;
         touch_box.image_xscale = touch_box.yscale;
-        touch_box.damage *= 1.05
+        touch_box.damage *= 1.10
         */
         break;
         case 6:
         hit_timer = 18;
 		touch_box.hitbox_timer = 0;
-		touch_box.damage *= 1.05;
+		touch_box.damage *= 1.10;
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
@@ -275,14 +275,14 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
     		touch_box.vsp *= -1
     		touch_box.hitbox_timer = 0;
     		touch_box.image_index = 0;
-    		touch_box.damage *= 1.05
+    		touch_box.damage *= 1.10
         }
         */
         break;
         case 7:
         hit_timer = 18;
 		touch_box.hitbox_timer = 0;
-		touch_box.damage *= 1.05;
+		touch_box.damage *= 1.10;
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
@@ -314,7 +314,7 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
         touch_box.mirror_angle = 90;
         touch_box.image_yscale = touch_box.xscale;
         touch_box.image_xscale = touch_box.yscale;
-        touch_box.damage *= 1.05
+        touch_box.damage *= 1.10
         */
         break;
     }

@@ -100,6 +100,8 @@ set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_MASK, sprite_get("fair_hit"));
 set_hitbox_value(AT_FAIR, 1, HG_HIT_SFX, asset_get("sfx_ori_energyhit_medium"));
 set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_ANIM_SPEED, .44);
 set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_HSPEED, 7);
+set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_GROUND_BEHAVIOR, 0);
+set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_WALL_BEHAVIOR, 0);
 set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_IS_TRANSCENDENT, false);
 set_hitbox_value(AT_FAIR, 1, HG_PROJECTILE_PLASMA_SAFE, false);
 set_hitbox_value(AT_FAIR, 1, HG_VISUAL_EFFECT, 67);
