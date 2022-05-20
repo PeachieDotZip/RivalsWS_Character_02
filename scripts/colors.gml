@@ -22,7 +22,7 @@ set_color_profile_slot_range( 4, 22, 26, 19 );
 
 // WING/EYE (2)
 set_color_profile_slot( 0, 5, 89, 57, 114 );
-set_color_profile_slot_range( 5, 1, 1, 1 );
+set_color_profile_slot_range( 5, 1, 3, 2 );
 
 // 2nd body
 set_color_profile_slot( 0, 6, 185, 150, 185 );
@@ -231,8 +231,8 @@ set_color_profile_slot( 20, 0, 147, 81, 65 ); //BODY
 set_color_profile_slot( 20, 1, 244, 169, 67 ); //RING
 set_color_profile_slot( 20, 2, 49, 72, 64 ); //PLANT GANG
 set_color_profile_slot( 20, 3, 210, 217, 233 ); //THORN
-set_color_profile_slot( 20, 4, 205, 119, 39 ); //WING/EYE (1)
-set_color_profile_slot( 20, 5, 211, 225, 227 ); //WING/EYE (2)
+set_color_profile_slot( 20, 4, 205, 118, 38 ); //WING/EYE (1)
+set_color_profile_slot( 20, 5, 135, 78, 25 ); //WING/EYE (2)
 set_color_profile_slot( 20, 6, 71, 39, 30 ); //2nd body
 set_color_profile_slot( 20, 7, 26, 54, 49 ); //thorn 2
 
@@ -349,6 +349,6 @@ set_color_profile_slot( 31, 7, 33, 14, 33 ); //thorn 2
 
 /* This is a comment used by that one RoA colors.gml generator tool to store palette data. You can safely keep it in your colors.gml if you plan to re-use the tool later, or safely remove it if you don't.
 === BEGIN JSON PALETTE ===
-{"formatversion":1,"data":[{"name":"BODY","colors":[{"r":228,"g":226,"b":215,"main":true}]},{"name":"RING","colors":[{"r":218,"g":187,"b":77,"main":true},{"r":183,"g":133,"b":56},{"r":245,"g":255,"b":144}]},{"name":"PLANT GANG","colors":[{"r":90,"g":114,"b":68,"main":true},{"r":141,"g":160,"b":90}]},{"name":"THORN","colors":[{"r":122,"g":89,"b":63,"main":true},{"r":181,"g":142,"b":90},{"r":99,"g":54,"b":44}]},{"name":"WING/EYE (1)","colors":[{"r":159,"g":43,"b":52,"main":true},{"r":205,"g":107,"b":149}]},{"name":"WING/EYE (2)","colors":[{"r":89,"g":57,"b":114,"main":true}]},{"name":"2nd body","colors":[{"r":185,"g":150,"b":185,"main":true},{"r":137,"g":89,"b":149}]},{"name":"thorn 2","colors":[{"r":29,"g":85,"b":38,"main":true}]}]}
+{"formatversion":1,"data":[{"name":"BODY","colors":[{"r":228,"g":226,"b":215,"main":true}]},{"name":"RING","colors":[{"r":218,"g":187,"b":77,"main":true},{"r":183,"g":133,"b":56},{"r":245,"g":255,"b":144}]},{"name":"PLANT GANG","colors":[{"r":90,"g":114,"b":68,"main":true},{"r":141,"g":160,"b":90}]},{"name":"THORN","colors":[{"r":122,"g":89,"b":63,"main":true},{"r":181,"g":142,"b":90},{"r":99,"g":54,"b":44}]},{"name":"WING/EYE (1)","colors":[{"r":159,"g":43,"b":52,"main":true},{"r":205,"g":107,"b":149}]},{"name":"WING/EYE (2)","colors":[{"r":89,"g":57,"b":114,"main":true},{"r":89,"g":58,"b":112}]},{"name":"2nd body","colors":[{"r":185,"g":150,"b":185,"main":true},{"r":137,"g":89,"b":149}]},{"name":"thorn 2","colors":[{"r":29,"g":85,"b":38,"main":true}]}]}
 === END JSON PALETTE ===
 */

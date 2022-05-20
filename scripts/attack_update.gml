@@ -64,12 +64,15 @@ if (attack == AT_DAIR && window == 3 && window_timer == 3){
 if (attack == AT_DAIR && window == 4 && window_timer == 7){
 	vsp += -4.4;
 }
-//Apply vsp to Uair
-if (attack == AT_UAIR && window == 3 && window_timer == 2){
-	vsp += -3;
+//Apply vsp and hsp to Uair
+if (attack == AT_UAIR && window == 2 && window_timer == 1){
+	vsp += 0;
 }
-if (attack == AT_UAIR && window == 3 && window_timer == 22){
-	vsp = -3;
+if (attack == AT_UAIR && window == 2 && window_timer == 1){
+	hsp *= 0.5;
+}
+if (attack == AT_UAIR && window == 3 && window_timer == 1){
+	hsp *= 0.6;
 }
 
 	//-Soft armor-

@@ -47,7 +47,7 @@ air_friction        = 0.033;		// 0.02 -  0.07
 max_fall            = 5.15;		// 6    -  11
 fast_fall           = 8.8;		// 11   -  16
 gravity_speed       = 0.33;		// 0.3  -  0.6
-hitstun_grav        = 0.4;		// 0.45 -  0.53
+hitstun_grav        = 0.5;		// 0.45 -  0.53
 
 // Jumps
 jump_start_time     = 5;		// 5                this stat is automatically decreased by 1 after init.gml (dan moment), so its "real value" is 4. if you change this during a match, 4 is the value you should reset it to
