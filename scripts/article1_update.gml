@@ -22,8 +22,12 @@ touch_box = instance_place(x, y, pHitBox);
 
 //peachie, don't delete this commented code, it's the old reflection code and we are planning on using it for the runes
 if(instance_exists(touch_box) && touch_box.player_id = player_id &&
-(touch_box.attack == AT_FTILT || touch_box.attack == AT_UTILT || touch_box.attack == AT_FAIR) && touch_box.reflected = 0 && touch_box.reflect_timer == 0){
-    touch_box.reflected = 1;
+(touch_box.attack == AT_FTILT || touch_box.attack == AT_UTILT || touch_box.attack == AT_FAIR) && touch_box.reflected = 0 && (player_id.mirror1 = self? touch_box.reflect_timer1 == 0: touch_box.reflect_timer2 == 0)){
+    if(player_id.mirror1 = self){
+    	touch_box.reflect_timer1 = 20;
+    }else{
+    	touch_box.reflect_timer2 = 20;
+    }
     switch(angle){
         case 0:
         hit_timer = 18;
@@ -32,17 +36,14 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
-		if(touch_box.hsp == 0){
-			touch_box.hsp = 10;
-		}
-		touch_box.hsp += touch_box.vsp;
-		touch_box.hsp = abs(touch_box.hsp);
+		var spsum = abs(touch_box.hsp) + abs(touch_box.vsp) + 3;
+		touch_box.hsp = spsum;
 		switch(touch_box.attack){
 			case AT_FTILT:
 			break;
 			case AT_UTILT:
-			touch_box.mirror_angle = 90;
 			touch_box.vsp = 0;
+			touch_box.mirror_angle = 90;
 			break;
 			case AT_FAIR:
 			touch_box.vsp = 0;
@@ -64,17 +65,11 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
-		touch_box.hsp += touch_box.vsp;
-		touch_box.hsp = abs(touch_box.hsp);
-		touch_box.vsp = -touch_box.hsp;
+		var spsum = abs(touch_box.hsp) + abs(touch_box.vsp) + 3;
+		touch_box.hsp = cos(degtorad(45)) * spsum;
+		touch_box.vsp = sin(degtorad(45)) * -1 * spsum;
 		switch(touch_box.attack){
 			case AT_FTILT:
-			if(touch_box.hsp == 0){
-				touch_box.hsp = 10;
-			}
-			if(touch_box.vsp == 0){
-				touch_box.vsp = 10;
-			}
 			break;
 			case AT_UTILT:
 			touch_box.mirror_angle = -45;
@@ -102,17 +97,11 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
-		touch_box.vsp += touch_box.hsp;
-		touch_box.vsp = abs(touch_box.vsp) * -1;
+		var spsum = abs(touch_box.hsp) + abs(touch_box.vsp) + 3;
+		touch_box.vsp = -1 * spsum;
 		switch(touch_box.attack){
 			case AT_FTILT:
-			touch_box.hsp = 0;
-			if(touch_box.hsp == 0){
-				touch_box.hsp = 10;
-			}
-			if(touch_box.vsp == 0){
-				touch_box.vsp = 10;
-			}
+			touch_box.hsp = touch_box.ovsp;
 			break;
 			case AT_UTILT:
 			touch_box.hsp = 0;
@@ -138,18 +127,11 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
-		touch_box.hsp += touch_box.vsp;
-		touch_box.hsp = abs(touch_box.hsp) * -1;
-		touch_box.vsp = touch_box.hsp;
+		var spsum = abs(touch_box.hsp) + abs(touch_box.vsp) + 3;
+		touch_box.hsp = cos(degtorad(45)) * -1 * spsum;
+		touch_box.vsp = sin(degtorad(45)) * -1 * spsum;
 		switch(touch_box.attack){
 			case AT_FTILT:
-			touch_box.mirror_angle = 0;
-			if(touch_box.hsp == 0){
-				touch_box.hsp = 10;
-			}
-			if(touch_box.vsp == 0){
-				touch_box.vsp = 10;
-			}
 			break;
 			case AT_UTILT:
 			touch_box.mirror_angle = 45;
@@ -177,16 +159,10 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
-		touch_box.hsp += touch_box.vsp;
-		touch_box.hsp = abs(touch_box.hsp) * -1;
+		var spsum = abs(touch_box.hsp) + abs(touch_box.vsp) + 3;
+		touch_box.hsp = -1 * spsum;
 		switch(touch_box.attack){
 			case AT_FTILT:
-			if(touch_box.hsp == 0){
-				touch_box.hsp = 10;
-			}
-			if(touch_box.vsp == 0){
-				touch_box.vsp = 10;
-			}
 			break;
 			case AT_UTILT:
 			touch_box.vsp = 0;
@@ -212,17 +188,11 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
-		touch_box.hsp += touch_box.vsp;
-		touch_box.hsp = abs(touch_box.hsp) * -1;
-		touch_box.vsp = -touch_box.hsp;
+		var spsum = abs(touch_box.hsp) + abs(touch_box.vsp) + 3;
+		touch_box.hsp = cos(degtorad(45)) * -1 * spsum;
+		touch_box.vsp = sin(degtorad(45)) * spsum;
 		switch(touch_box.attack){
 			case AT_FTILT:
-			if(touch_box.hsp == 0){
-				touch_box.hsp = 10;
-			}
-			if(touch_box.vsp == 0){
-				touch_box.vsp = 10;
-			}
 			break;
 			case AT_UTILT:
 			touch_box.mirror_angle = -45;
@@ -250,17 +220,11 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
-		touch_box.vsp += touch_box.hsp;
-		touch_box.vsp = abs(touch_box.vsp);
+		var spsum = abs(touch_box.hsp) + abs(touch_box.vsp) + 3;
+		touch_box.vsp = spsum;
 		switch(touch_box.attack){
 			case AT_FTILT:
-			touch_box.hsp = 0;
-			if(touch_box.hsp == 0){
-				touch_box.hsp = 10;
-			}
-			if(touch_box.vsp == 0){
-				touch_box.vsp = 10;
-			}
+			touch_box.hsp = touch_box.ovsp;
 			break;
 			case AT_UTILT:
 			touch_box.hsp = 0;
@@ -286,17 +250,11 @@ if(instance_exists(touch_box) && touch_box.player_id = player_id &&
 		touch_box.image_index = 0;
 		touch_box.x = x;
 		touch_box.y = y;
-		touch_box.hsp += touch_box.vsp;
-		touch_box.hsp = abs(touch_box.hsp);
-		touch_box.vsp = touch_box.hsp;
+		var spsum = abs(touch_box.hsp) + abs(touch_box.vsp) + 3;
+		touch_box.hsp = cos(degtorad(45)) * spsum;
+		touch_box.vsp = sin(degtorad(45)) * spsum;
 		switch(touch_box.attack){
 			case AT_FTILT:
-			if(touch_box.hsp == 0){
-				touch_box.hsp = 10;
-			}
-			if(touch_box.vsp == 0){
-				touch_box.vsp = 10;
-			}
 			break;
 			case AT_UTILT:
 			touch_box.mirror_angle = 45;
@@ -336,5 +294,10 @@ move_cooldown[AT_DSPECIAL] = hit_timer;
 
 //Destroys object
 if(destroye = 1 && anim_timer == 30){
+	player_id.selected = 0;
+	if(player_id.mirror1 == self){
+		player_id.mirror1 = player_id.mirror2;
+		player_id.mirror2 = noone;
+	}
     instance_destroy(self);
 }

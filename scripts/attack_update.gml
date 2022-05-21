@@ -101,6 +101,7 @@ if(attack == AT_DSPECIAL){
 	can_fast_fall = false;
 	if(window == 2 && !instance_exists(mirror1) && !instance_exists(mirror2) && window_timer >= 7){
 		mirror1 = instance_create(x, y - 34, "obj_article1");
+		selected = 0;
 	}
 	if(window == 2 && !instance_exists(mirror1) && !instance_exists(mirror2) && window_timer == 3){
 		var mirror_appear = spawn_hit_fx( x - 45 * spr_dir, y - 82, halo_creation);
@@ -116,13 +117,14 @@ if(attack == AT_DSPECIAL){
 				mirror1 = instance_create(x, y - 34, "obj_article1");
 				var mirror_appear = spawn_hit_fx( x - 45 * spr_dir, y - 82, halo_creation);
 				mirror_appear.depth = -10;
+				selected = 1;
 			}else if(!instance_exists(mirror2)){
 				mirror2 = instance_create(x, y - 34, "obj_article1");
 				var mirror_appear = spawn_hit_fx( x - 45 * spr_dir, y - 82, halo_creation);
 				mirror_appear.depth = -10;
+				selected = 0;
 			}
 			mirror_spawn = 1;
-			selected = 0;
 		}
 	}else if(window == 2 && instance_exists(mirror1) && instance_exists(mirror2) && temp_cooldown == 0 && shield_pressed){
 		temp_cooldown = 10;

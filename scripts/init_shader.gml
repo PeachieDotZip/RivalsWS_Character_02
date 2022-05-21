@@ -50,4 +50,5 @@ if(get_color_profile_slot_r(26, 0) > 0 && get_color_profile_slot_r(1, 0) == 218)
 }else{
     set_color_profile_slot( 1, 0, 217, 193, 41 );
 }
+set_article_color_slot(1, r_mir, g_mir, b_mir);
 }

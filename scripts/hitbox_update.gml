@@ -3,12 +3,10 @@ if(mirror_angle != 0){
 	image_angle = mirror_angle;
 }
 
-if(reflected == 1 && reflect_timer == 0){
-	reflect_timer = 30;
-}else if(reflect_timer == 1 && reflected == 1){
-	reflected = 0;
-}
-reflect_timer -= (reflect_timer > 0? 1: 0);
+reflect_timer1 -= (reflect_timer1 > 0? 1: 0);
+reflect_timer2 -= (reflect_timer2 > 0? 1: 0);
+
+print_debug(string(hsp) + ", " + string(vsp))
 
 //Slow down Ftilt's projectiles over time and play dust effect when destroyed
 if (attack == AT_FTILT)
