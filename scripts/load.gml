@@ -5,7 +5,13 @@ sprite_change_offset("idle_air", 71, 80);//
 sprite_change_offset("hurtbox", 77, 84);// standard hurtbox
 sprite_change_offset("hurtbox_crouch", 56, 84);// crouching hurtbox
 sprite_change_offset("hurtbox_air", 77, 80);// airborne hurtbox
-sprite_change_offset("hurt", 32, 62);//
+sprite_change_offset("hurt", 71, 85);//
+sprite_change_offset("hurtground", 75, 80);//
+sprite_change_offset("bighurt", 45, 75);//
+sprite_change_offset("spinhurt", 65, 75);//
+sprite_change_offset("uphurt", 60, 72);//
+sprite_change_offset("downhurt", 30, 65);//
+sprite_change_offset("bouncehurt", 60, 72);//
 sprite_change_offset("crouch", 80, 102);//
 sprite_change_offset("walk", 85, 85);//
 sprite_change_offset("walkturn", 80, 82);
